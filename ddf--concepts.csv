@@ -9,3 +9,14 @@ population_per_km2,measure,Population densiry per km2,
 population,measure,Population,
 population_change_2010_2019_pct,measure,Population change 2010 to 2019 (%),
 foreign_nationals_pct,measure,Population of foreign nationals (%),
+voting_evp_csp,measure,Voting for EVP/CSP,Voter shares of selected parties in % (National Council elections)
+voting_small_right,measure,Voting for Small right-wing parties,Voter shares of selected parties in % (National Council elections)
+voting_pda_sol,measure,Voting for PdA/Sol.,Voter shares of selected parties in % (National Council elections)
+voting_fdp_plr2,measure,Voting for FDP/PLR 2),Voter shares of selected parties in % (National Council elections)
+voting_glp,measure,Voting for GLP,Voter shares of selected parties in % (National Council elections)
+voting_gps,measure,Voting for GPS,Voter shares of selected parties in % (National Council elections)
+voting_cvp,measure,Voting for CVP,Voter shares of selected parties in % (National Council elections)
+voting_bdp,measure,Voting for BDP,Voter shares of selected parties in % (National Council elections)
+voting_svp,measure,Voting for SVP,Voter shares of selected parties in % (National Council elections)
+voting_sp,measure,Voting for SP,Voter shares of selected parties in % (National Council elections)
+
