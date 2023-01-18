@@ -1,0 +1,8 @@
+concept,name,concept_type
+geo,Geo,entity_domain
+name,Name,string
+year,Year,time
+population_per_km2,Population densiry per km2,measure
+population,Population,measure
+population_change_2010_2019_pct,Population change 2010 to 2019 (%),measure
+foreign_nationals_pct,Population of foreign nationals (%),measure
