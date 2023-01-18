@@ -1,6 +1,7 @@
 concept,name,concept_type
 geo,Geo,entity_domain
 name,Name,string
+id,id,string
 year,Year,time
 population_per_km2,Population densiry per km2,measure
 population,Population,measure

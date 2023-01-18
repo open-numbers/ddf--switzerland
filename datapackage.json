@@ -122,6 +122,9 @@
             "name": "geo"
           },
           {
+            "name": "id"
+          },
+          {
             "name": "name"
           }
         ],
@@ -173,6 +176,15 @@
       }
     ],
     "entities": [
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "id",
+        "resources": [
+          "geo"
+        ]
+      },
       {
         "primaryKey": [
           "geo"
