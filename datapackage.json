@@ -23,6 +23,9 @@
             "name": "concept_type"
           },
           {
+            "name": "domain"
+          },
+          {
             "name": "name"
           },
           {
@@ -96,6 +99,27 @@
       }
     },
     {
+      "path": "ddf--datapoints--population_from_tax_data--by--geo--year.csv",
+      "name": "population_from_tax_data--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "population_from_tax_data"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
       "path": "ddf--datapoints--population_per_km2--by--geo--year.csv",
       "name": "population_per_km2--by--geo--year",
       "schema": {
@@ -108,6 +132,48 @@
           },
           {
             "name": "population_per_km2"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--tax_percapita--by--geo--year.csv",
+      "name": "tax_percapita--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "tax_percapita"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--total_tax--by--geo--year.csv",
+      "name": "total_tax--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "total_tax"
           }
         ],
         "primaryKey": [
@@ -348,6 +414,51 @@
       }
     },
     {
+      "path": "ddf--entities--canton.csv",
+      "name": "canton",
+      "schema": {
+        "fields": [
+          {
+            "name": "canton"
+          },
+          {
+            "name": "id"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "is--canton"
+          }
+        ],
+        "primaryKey": "canton"
+      }
+    },
+    {
+      "path": "ddf--entities--commune.csv",
+      "name": "commune",
+      "schema": {
+        "fields": [
+          {
+            "name": "commune"
+          },
+          {
+            "name": "id"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "canton"
+          },
+          {
+            "name": "is--commune"
+          }
+        ],
+        "primaryKey": "commune"
+      }
+    },
+    {
       "path": "ddf--entities--geo.csv",
       "name": "geo",
       "schema": {
@@ -368,6 +479,186 @@
   ],
   "ddfSchema": {
     "datapoints": [
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "foreign_nationals_pct",
+        "resources": [
+          "foreign_nationals_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "population",
+        "resources": [
+          "population--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "population_change_2010_2019_pct",
+        "resources": [
+          "population_change_2010_2019_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "population_from_tax_data",
+        "resources": [
+          "population_from_tax_data--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "population_per_km2",
+        "resources": [
+          "population_per_km2--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "tax_percapita",
+        "resources": [
+          "tax_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "total_tax",
+        "resources": [
+          "total_tax--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "unemployed_pct",
+        "resources": [
+          "unemployed_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_bdp",
+        "resources": [
+          "voting_bdp--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_cvp",
+        "resources": [
+          "voting_cvp--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_evp_csp",
+        "resources": [
+          "voting_evp_csp--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_fdp_plr2",
+        "resources": [
+          "voting_fdp_plr2--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_glp",
+        "resources": [
+          "voting_glp--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_gps",
+        "resources": [
+          "voting_gps--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_pda_sol",
+        "resources": [
+          "voting_pda_sol--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_small_right",
+        "resources": [
+          "voting_small_right--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_sp",
+        "resources": [
+          "voting_sp--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "voting_svp",
+        "resources": [
+          "voting_svp--by--geo--year"
+        ]
+      },
       {
         "primaryKey": [
           "geo",
@@ -403,9 +694,39 @@
           "geo",
           "year"
         ],
+        "value": "population_from_tax_data",
+        "resources": [
+          "population_from_tax_data--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
         "value": "population_per_km2",
         "resources": [
           "population_per_km2--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "tax_percapita",
+        "resources": [
+          "tax_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "total_tax",
+        "resources": [
+          "total_tax--by--geo--year"
         ]
       },
       {
@@ -522,11 +843,103 @@
     "entities": [
       {
         "primaryKey": [
+          "canton"
+        ],
+        "value": "id",
+        "resources": [
+          "canton"
+        ]
+      },
+      {
+        "primaryKey": [
+          "canton"
+        ],
+        "value": "is--canton",
+        "resources": [
+          "canton"
+        ]
+      },
+      {
+        "primaryKey": [
+          "canton"
+        ],
+        "value": "name",
+        "resources": [
+          "canton"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune"
+        ],
+        "value": "canton",
+        "resources": [
+          "commune"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune"
+        ],
+        "value": "id",
+        "resources": [
+          "commune"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune"
+        ],
+        "value": "is--commune",
+        "resources": [
+          "commune"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune"
+        ],
+        "value": "name",
+        "resources": [
+          "commune"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "canton",
+        "resources": [
+          "commune"
+        ]
+      },
+      {
+        "primaryKey": [
           "geo"
         ],
         "value": "id",
         "resources": [
+          "canton",
+          "commune",
           "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--canton",
+        "resources": [
+          "canton"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--commune",
+        "resources": [
+          "commune"
         ]
       },
       {
@@ -535,6 +948,8 @@
         ],
         "value": "name",
         "resources": [
+          "canton",
+          "commune",
           "geo"
         ]
       }
@@ -554,6 +969,15 @@
           "concept"
         ],
         "value": "description",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "domain",
         "resources": [
           "ddf--concepts"
         ]

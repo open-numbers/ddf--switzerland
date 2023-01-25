@@ -1,0 +1,27 @@
+﻿canton,id,name,is--canton
+c1,c1,Zürich,TRUE
+c2,c2,Bern / Berne,TRUE
+c3,c3,Luzern,TRUE
+c4,c4,Uri,TRUE
+c5,c5,Schwyz,TRUE
+c6,c6,Obwalden,TRUE
+c7,c7,Nidwalden,TRUE
+c8,c8,Glarus,TRUE
+c9,c9,Zug,TRUE
+c10,c10,Fribourg / Freiburg,TRUE
+c11,c11,Solothurn,TRUE
+c12,c12,Basel-Stadt,TRUE
+c13,c13,Basel-Landschaft,TRUE
+c14,c14,Schaffhausen,TRUE
+c15,c15,Appenzell Ausserrhoden,TRUE
+c16,c16,Appenzell Innerrhoden,TRUE
+c17,c17,St. Gallen,TRUE
+c18,c18,Graubünden / Grigioni / Grischun,TRUE
+c19,c19,Aargau,TRUE
+c20,c20,Thurgau,TRUE
+c21,c21,Ticino,TRUE
+c22,c22,Vaud,TRUE
+c23,c23,Valais / Wallis,TRUE
+c24,c24,Neuchâtel,TRUE
+c25,c25,Genève,TRUE
+c26,c26,Jura,TRUE
