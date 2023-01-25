@@ -1,35 +1,38 @@
-concept,concept_type,domain,name,description
-geo,entity_domain,,Geo,
-commune,entity_set,geo,Commune,
-canton,entity_set,geo,Canton,
-name,string,,Name,
-domain,string,,domain,
-id,string,,id,
-description,string,,Description,
-year,time,,Year,
-unemployed_pct,measure,,Unemployed (%),Calculated like so: (pop - employed_pop)/pop*100 therefore could be negative
-population_per_km2,measure,,Population densiry per km2,
-population,measure,,Population,
-population_change_2010_2019_pct,measure,,Population change 2010 to 2019 (%),
-foreign_nationals_pct,measure,,Population of foreign nationals (%),
-voting_evp_csp,measure,,Voting for EVP/CSP,Voter shares of selected parties in % (National Council elections)
-voting_small_right,measure,,Voting for Small right-wing parties,Voter shares of selected parties in % (National Council elections)
-voting_pda_sol,measure,,Voting for PdA/Sol.,Voter shares of selected parties in % (National Council elections)
-voting_fdp_plr2,measure,,Voting for FDP/PLR 2),Voter shares of selected parties in % (National Council elections)
-voting_glp,measure,,Voting for GLP,Voter shares of selected parties in % (National Council elections)
-voting_gps,measure,,Voting for GPS,Voter shares of selected parties in % (National Council elections)
-voting_cvp,measure,,Voting for CVP,Voter shares of selected parties in % (National Council elections)
-voting_bdp,measure,,Voting for BDP,Voter shares of selected parties in % (National Council elections)
-voting_svp,measure,,Voting for SVP,Voter shares of selected parties in % (National Council elections)
-voting_sp,measure,,Voting for SP,Voter shares of selected parties in % (National Council elections)
-total_tax,measure,,Tax revenue total (CHF),Direct federal tax table C4
-tax_percapita,measure,,Tax revenue per capita (CHF),Direct federal tax table C4
-population_from_tax_data,measure,,Population from tax data,Direct federal tax table C4
-population_25plus,measure,,Population 25+ from education data,Permanent resident population aged 25 years and older
-edu_without_post_comp_edu,measure,,"Without post-compulsory education, #","Highest completed education by cities, 2016-2020 cumulated"
-edu_secondary,measure,,"Secondary level II, #","Highest completed education by cities, 2016-2020 cumulated"
-edu_tertiary,measure,,"Tertiary level, #","Highest completed education by cities, 2016-2020 cumulated"
-edu_without_post_comp_edu_pct,measure,,"Without post-compulsory education, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-edu_secondary_pct,measure,,"Secondary level II, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-edu_tertiary_pct,measure,,"Tertiary level, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-
+concept,concept_type,domain,name,tags,description
+geo,entity_domain,,Geo,,
+commune,entity_set,geo,Commune,,
+canton,entity_set,geo,Canton,,
+name,string,,Name,_none,
+domain,string,,domain,_none,
+id,string,,id,_none,
+description,string,,Description,_none,
+year,time,,Year,_none,
+tag,entity_domain,,,_none,
+parent,string,,,_none,
+tags,string,,,_none,
+unemployed_pct,measure,,Unemployed (%),economy,Calculated like so: (pop - employed_pop)/pop*100 therefore could be negative
+population_per_km2,measure,,Population densiry per km2,population,
+population,measure,,Population,population,
+population_change_2010_2019_pct,measure,,Population change 2010 to 2019 (%),population,
+foreign_nationals_pct,measure,,Population of foreign nationals (%),population,
+voting_evp_csp,measure,,Voting for EVP/CSP,voting,Voter shares of selected parties in % (National Council elections)
+voting_small_right,measure,,Voting for Small right-wing parties,voting,Voter shares of selected parties in % (National Council elections)
+voting_pda_sol,measure,,Voting for PdA/Sol.,voting,Voter shares of selected parties in % (National Council elections)
+voting_fdp_plr2,measure,,Voting for FDP/PLR 2),voting,Voter shares of selected parties in % (National Council elections)
+voting_glp,measure,,Voting for GLP,voting,Voter shares of selected parties in % (National Council elections)
+voting_gps,measure,,Voting for GPS,voting,Voter shares of selected parties in % (National Council elections)
+voting_cvp,measure,,Voting for CVP,voting,Voter shares of selected parties in % (National Council elections)
+voting_bdp,measure,,Voting for BDP,voting,Voter shares of selected parties in % (National Council elections)
+voting_svp,measure,,Voting for SVP,voting,Voter shares of selected parties in % (National Council elections)
+voting_sp,measure,,Voting for SP,voting,Voter shares of selected parties in % (National Council elections)
+total_tax,measure,,Tax revenue total (CHF),economy,Direct federal tax table C4
+tax_percapita,measure,,Tax revenue per capita (CHF),economy,Direct federal tax table C4
+population_from_tax_data,measure,,Population from tax data,economy,Direct federal tax table C4
+population_25plus,measure,,Population 25+ from education data,population,Permanent resident population aged 25 years and older
+edu_without_post_comp_edu,measure,,"Without post-compulsory education, #",education,"Highest completed education by cities, 2016-2020 cumulated"
+edu_secondary,measure,,"Secondary level II, #",education,"Highest completed education by cities, 2016-2020 cumulated"
+edu_tertiary,measure,,"Tertiary level, #",education,"Highest completed education by cities, 2016-2020 cumulated"
+edu_without_post_comp_edu_pct,measure,,"Without post-compulsory education, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_secondary_pct,measure,,"Secondary level II, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_tertiary_pct,measure,,"Tertiary level, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+social_assistance_rate,measure,,Social assistance rate,economy,

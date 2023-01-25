@@ -29,6 +29,9 @@
             "name": "name"
           },
           {
+            "name": "tags"
+          },
+          {
             "name": "description"
           }
         ],
@@ -279,6 +282,27 @@
           },
           {
             "name": "population_per_km2"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--social_assistance_rate--by--geo--year.csv",
+      "name": "social_assistance_rate--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "social_assistance_rate"
           }
         ],
         "primaryKey": [
@@ -622,6 +646,24 @@
         ],
         "primaryKey": "geo"
       }
+    },
+    {
+      "path": "ddf--entities--tag.csv",
+      "name": "tag",
+      "schema": {
+        "fields": [
+          {
+            "name": "tag"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "parent"
+          }
+        ],
+        "primaryKey": "tag"
+      }
     }
   ],
   "ddfSchema": {
@@ -744,6 +786,16 @@
         "value": "population_per_km2",
         "resources": [
           "population_per_km2--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "social_assistance_rate",
+        "resources": [
+          "social_assistance_rate--by--geo--year"
         ]
       },
       {
@@ -994,6 +1046,16 @@
         "value": "population_per_km2",
         "resources": [
           "population_per_km2--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "social_assistance_rate",
+        "resources": [
+          "social_assistance_rate--by--geo--year"
         ]
       },
       {
@@ -1239,6 +1301,24 @@
           "commune",
           "geo"
         ]
+      },
+      {
+        "primaryKey": [
+          "tag"
+        ],
+        "value": "name",
+        "resources": [
+          "tag"
+        ]
+      },
+      {
+        "primaryKey": [
+          "tag"
+        ],
+        "value": "parent",
+        "resources": [
+          "tag"
+        ]
       }
     ],
     "concepts": [
@@ -1274,6 +1354,15 @@
           "concept"
         ],
         "value": "name",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "tags",
         "resources": [
           "ddf--concepts"
         ]
