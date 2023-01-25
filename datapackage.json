@@ -36,6 +36,132 @@
       }
     },
     {
+      "path": "ddf--datapoints--edu_secondary--by--geo--year.csv",
+      "name": "edu_secondary--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_secondary"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--edu_secondary_pct--by--geo--year.csv",
+      "name": "edu_secondary_pct--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_secondary_pct"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--edu_tertiary--by--geo--year.csv",
+      "name": "edu_tertiary--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_tertiary"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--edu_tertiary_pct--by--geo--year.csv",
+      "name": "edu_tertiary_pct--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_tertiary_pct"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--edu_without_post_comp_edu--by--geo--year.csv",
+      "name": "edu_without_post_comp_edu--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_without_post_comp_edu"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--edu_without_post_comp_edu_pct--by--geo--year.csv",
+      "name": "edu_without_post_comp_edu_pct--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "edu_without_post_comp_edu_pct"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
       "path": "ddf--datapoints--foreign_nationals_pct--by--geo--year.csv",
       "name": "foreign_nationals_pct--by--geo--year",
       "schema": {
@@ -69,6 +195,27 @@
           },
           {
             "name": "population"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--population_25plus--by--geo--year.csv",
+      "name": "population_25plus--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "population_25plus"
           }
         ],
         "primaryKey": [
@@ -484,6 +631,66 @@
           "commune",
           "year"
         ],
+        "value": "edu_secondary",
+        "resources": [
+          "edu_secondary--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "edu_secondary_pct",
+        "resources": [
+          "edu_secondary_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "edu_tertiary",
+        "resources": [
+          "edu_tertiary--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "edu_tertiary_pct",
+        "resources": [
+          "edu_tertiary_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "edu_without_post_comp_edu",
+        "resources": [
+          "edu_without_post_comp_edu--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "edu_without_post_comp_edu_pct",
+        "resources": [
+          "edu_without_post_comp_edu_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
         "value": "foreign_nationals_pct",
         "resources": [
           "foreign_nationals_pct--by--geo--year"
@@ -497,6 +704,16 @@
         "value": "population",
         "resources": [
           "population--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "population_25plus",
+        "resources": [
+          "population_25plus--by--geo--year"
         ]
       },
       {
@@ -664,6 +881,66 @@
           "geo",
           "year"
         ],
+        "value": "edu_secondary",
+        "resources": [
+          "edu_secondary--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "edu_secondary_pct",
+        "resources": [
+          "edu_secondary_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "edu_tertiary",
+        "resources": [
+          "edu_tertiary--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "edu_tertiary_pct",
+        "resources": [
+          "edu_tertiary_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "edu_without_post_comp_edu",
+        "resources": [
+          "edu_without_post_comp_edu--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "edu_without_post_comp_edu_pct",
+        "resources": [
+          "edu_without_post_comp_edu_pct--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
         "value": "foreign_nationals_pct",
         "resources": [
           "foreign_nationals_pct--by--geo--year"
@@ -677,6 +954,16 @@
         "value": "population",
         "resources": [
           "population--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "population_25plus",
+        "resources": [
+          "population_25plus--by--geo--year"
         ]
       },
       {

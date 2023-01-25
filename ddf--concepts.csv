@@ -25,3 +25,11 @@ voting_sp,measure,,Voting for SP,Voter shares of selected parties in % (National
 total_tax,measure,,Tax revenue total (CHF),Direct federal tax table C4
 tax_percapita,measure,,Tax revenue per capita (CHF),Direct federal tax table C4
 population_from_tax_data,measure,,Population from tax data,Direct federal tax table C4
+population_25plus,measure,,Population 25+ from education data,Permanent resident population aged 25 years and older
+edu_without_post_comp_edu,measure,,"Without post-compulsory education, #","Highest completed education by cities, 2016-2020 cumulated"
+edu_secondary,measure,,"Secondary level II, #","Highest completed education by cities, 2016-2020 cumulated"
+edu_tertiary,measure,,"Tertiary level, #","Highest completed education by cities, 2016-2020 cumulated"
+edu_without_post_comp_edu_pct,measure,,"Without post-compulsory education, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_secondary_pct,measure,,"Secondary level II, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_tertiary_pct,measure,,"Tertiary level, % of 25+ population","Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+
