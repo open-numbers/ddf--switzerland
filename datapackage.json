@@ -186,6 +186,48 @@
       }
     },
     {
+      "path": "ddf--datapoints--net_income--by--geo--year.csv",
+      "name": "net_income--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "net_income"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--net_income_percapita--by--geo--year.csv",
+      "name": "net_income_percapita--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "net_income_percapita"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
       "path": "ddf--datapoints--population--by--geo--year.csv",
       "name": "population--by--geo--year",
       "schema": {
@@ -324,6 +366,48 @@
           },
           {
             "name": "tax_percapita"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--taxable_income--by--geo--year.csv",
+      "name": "taxable_income--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "taxable_income"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--taxable_income_percapita--by--geo--year.csv",
+      "name": "taxable_income_percapita--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "taxable_income_percapita"
           }
         ],
         "primaryKey": [
@@ -743,6 +827,26 @@
           "commune",
           "year"
         ],
+        "value": "net_income",
+        "resources": [
+          "net_income--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "net_income_percapita",
+        "resources": [
+          "net_income_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
         "value": "population",
         "resources": [
           "population--by--geo--year"
@@ -806,6 +910,26 @@
         "value": "tax_percapita",
         "resources": [
           "tax_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "taxable_income",
+        "resources": [
+          "taxable_income--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "commune",
+          "year"
+        ],
+        "value": "taxable_income_percapita",
+        "resources": [
+          "taxable_income_percapita--by--geo--year"
         ]
       },
       {
@@ -1003,6 +1127,26 @@
           "geo",
           "year"
         ],
+        "value": "net_income",
+        "resources": [
+          "net_income--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "net_income_percapita",
+        "resources": [
+          "net_income_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
         "value": "population",
         "resources": [
           "population--by--geo--year"
@@ -1066,6 +1210,26 @@
         "value": "tax_percapita",
         "resources": [
           "tax_percapita--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "taxable_income",
+        "resources": [
+          "taxable_income--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "taxable_income_percapita",
+        "resources": [
+          "taxable_income_percapita--by--geo--year"
         ]
       },
       {

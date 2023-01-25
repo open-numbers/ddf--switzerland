@@ -10,29 +10,33 @@ year,time,,Year,_none,
 tag,entity_domain,,,_none,
 parent,string,,,_none,
 tags,string,,,_none,
-unemployed_pct,measure,,Unemployed (%),economy,Calculated like so: (pop - employed_pop)/pop*100 therefore could be negative
-population_per_km2,measure,,Population densiry per km2,population,
-population,measure,,Population,population,
-population_change_2010_2019_pct,measure,,Population change 2010 to 2019 (%),population,
-foreign_nationals_pct,measure,,Population of foreign nationals (%),population,
-voting_evp_csp,measure,,Voting for EVP/CSP,voting,Voter shares of selected parties in % (National Council elections)
-voting_small_right,measure,,Voting for Small right-wing parties,voting,Voter shares of selected parties in % (National Council elections)
-voting_pda_sol,measure,,Voting for PdA/Sol.,voting,Voter shares of selected parties in % (National Council elections)
-voting_fdp_plr2,measure,,Voting for FDP/PLR 2),voting,Voter shares of selected parties in % (National Council elections)
-voting_glp,measure,,Voting for GLP,voting,Voter shares of selected parties in % (National Council elections)
-voting_gps,measure,,Voting for GPS,voting,Voter shares of selected parties in % (National Council elections)
-voting_cvp,measure,,Voting for CVP,voting,Voter shares of selected parties in % (National Council elections)
-voting_bdp,measure,,Voting for BDP,voting,Voter shares of selected parties in % (National Council elections)
-voting_svp,measure,,Voting for SVP,voting,Voter shares of selected parties in % (National Council elections)
-voting_sp,measure,,Voting for SP,voting,Voter shares of selected parties in % (National Council elections)
-total_tax,measure,,Tax revenue total (CHF),economy,Direct federal tax table C4
-tax_percapita,measure,,Tax revenue per capita (CHF),economy,Direct federal tax table C4
-population_from_tax_data,measure,,Population from tax data,economy,Direct federal tax table C4
-population_25plus,measure,,Population 25+ from education data,population,Permanent resident population aged 25 years and older
-edu_without_post_comp_edu,measure,,"Without post-compulsory education, #",education,"Highest completed education by cities, 2016-2020 cumulated"
-edu_secondary,measure,,"Secondary level II, #",education,"Highest completed education by cities, 2016-2020 cumulated"
-edu_tertiary,measure,,"Tertiary level, #",education,"Highest completed education by cities, 2016-2020 cumulated"
-edu_without_post_comp_edu_pct,measure,,"Without post-compulsory education, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-edu_secondary_pct,measure,,"Secondary level II, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-edu_tertiary_pct,measure,,"Tertiary level, % of 25+ population",education,"Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
-social_assistance_rate,measure,,Social assistance rate,economy,
+unemployed_pct,measure,,Unemployed (%),economy,From the commune portraits table. Calculated like so: (pop - employed_pop)/pop*100 therefore could be negative
+population_per_km2,measure,,Population densiry per km2,population,From the commune portraits table.
+population,measure,,Population,population,From the commune portraits table.
+population_change_2010_2019_pct,measure,,Population change 2010 to 2019 (%),population,From the commune portraits table.
+foreign_nationals_pct,measure,,Population of foreign nationals (%),population,From the commune portraits table.
+voting_evp_csp,measure,,Voting for EVP/CSP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_small_right,measure,,Voting for Small right-wing parties,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_pda_sol,measure,,Voting for PdA/Sol.,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_fdp_plr2,measure,,Voting for FDP/PLR 2),voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_glp,measure,,Voting for GLP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_gps,measure,,Voting for GPS,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_cvp,measure,,Voting for CVP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_bdp,measure,,Voting for BDP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_svp,measure,,Voting for SVP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+voting_sp,measure,,Voting for SP,voting,Voter shares of selected parties in % (National Council elections). From the commune portraits table.
+total_tax,measure,,Tax revenue total (CHF),economy,From the Direct federal tax table: sheet C4
+tax_percapita,measure,,Tax revenue per capita (CHF),economy,From the Direct federal tax table: sheet C4
+population_from_tax_data,measure,,Population from tax data,economy,From the Direct federal tax table: sheet C4
+net_income,measure,,Net income (x1000 CHF),economy,"Taxpayers paying a direct federal tax, ordinary and special cases combined. From the Direct federal tax table: sheet A242"
+taxable_income,measure,,Taxable income (x1000 CHF),economy,"Taxpayers paying a direct federal tax, ordinary and special cases combined. From the Direct federal tax table: sheet A243"
+net_income_percapita,measure,,Net income per capita (x1000 CHF),economy,"Taxpayers paying a direct federal tax, ordinary and special cases combined. From the Direct federal tax table: sheet A242 and population from sheet C4"
+taxable_income_percapita,measure,,Taxable income per capits (x1000 CHF),economy,"Taxpayers paying a direct federal tax, ordinary and special cases combined. From the Direct federal tax table: sheet A243 and population from sheet C4"
+population_25plus,measure,,Population 25+ from education data,population,Permanent resident population aged 25 years and older. From the education by cities table.
+edu_without_post_comp_edu,measure,,"Without post-compulsory education, #",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated"
+edu_secondary,measure,,"Secondary level II, #",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated"
+edu_tertiary,measure,,"Tertiary level, #",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated"
+edu_without_post_comp_edu_pct,measure,,"Without post-compulsory education, % of 25+ population",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_secondary_pct,measure,,"Secondary level II, % of 25+ population",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+edu_tertiary_pct,measure,,"Tertiary level, % of 25+ population",education,"From the education by cities table. Highest completed education by cities, 2016-2020 cumulated / Permanent resident population aged 25 years and older"
+social_assistance_rate,measure,,Social assistance rate,economy,From the commune portraits table.
